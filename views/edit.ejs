@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EDIT USERNAME</title>
+</head>
+<body>
+  <h2>you can edit your <%=user.name%> </h2>
+   <form method="post" action="/user/<%=user.id%>?_method=PATCH">
+    <textarea name="name" ><%= user.name %></textarea>
+    <input type="password" name="password" placeholder="enter password">
+    <button>EDIT</button>
+    
+   </form>
+  
+</body>
+</html>
